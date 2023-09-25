@@ -4,11 +4,25 @@
   align-items: center;
   padding: var(--horizontal-space);
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 .screen-header__title {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .screen-header__icons span {
   margin-left: 20px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotateCog 1s linear infinite;
 }
